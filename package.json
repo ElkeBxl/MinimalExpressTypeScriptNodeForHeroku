@@ -1,0 +1,36 @@
+{
+    "name": "minimalexpresstypescriptnodeforheroku",
+    "version": "1.0.0",
+    "description": "",    
+    "engines": {
+        "node": "8.9.1"
+    },
+    "main": "dist/server.js",
+    "scripts": {
+        "build": "tsc",
+        "dev": "ts-node ./src/server.ts",
+        "start": "node ./dist/server.js",
+        "prod": "npm run build && npm start",
+        "postinstall": "npm run build"
+    },
+    "dependencies": {
+        "@types/express": "^4.11.1",
+        "body-parser": "^1.18.2",
+        "express": "^4.16.3",
+        "typescript": "^2.7.2"
+    },
+    "devDependencies": {
+        "@types/node": "^9.4.7",
+        "request": "^2.81.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ElkeBxl/MinimalExpressTypeScriptNodeForHeroku.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ElkeBxl/MinimalExpressTypeScriptNodeForHeroku/issues"
+    },
+    "homepage": "https://github.com/ElkeBxl/MinimalExpressTypeScriptNodeForHeroku#readme"
+}
